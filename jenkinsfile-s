@@ -1,12 +1,13 @@
 node {
-    stage ("one") {
+    stage("one") {
+      steps {
         echo "one"
-           
+      }
+    }  
+    
+    stage("one") {
+      steps {
+        echo "one"
+      }
     }
-
-    stage('two') {
-       echo "two"
-        
-    }
- 
-}
+}        
