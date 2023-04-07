@@ -1,7 +1,10 @@
 node('workstation') {
+    stage("one") {
+        echo "one"
 
-    properties([
-        parameters([
-            string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Environment')
-        ])
-    ])
+    }
+    stage('two') {
+        echo "two"
+
+    }
+}    
