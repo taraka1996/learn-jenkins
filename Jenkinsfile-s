@@ -1,0 +1,7 @@
+node('workstation') {
+
+    properties([
+        parameters([
+            string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Environment')
+        ])
+    ])
